@@ -1,0 +1,147 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfaf6;
+  margin: 0;
+  padding: 0;
+  color: #2e2e2e;
+}
+
+.main-content {
+  margin-left: 260px;
+  padding: 2rem;
+  background-color: #fdfaf6;
+  min-height: 100vh;
+}
+
+h2 {
+  color: #445735;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.data-section {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 14px;
+  background-color: white;
+}
+
+.data-table th,
+.data-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border: 1px solid #e0dacf; /* 👉 garis halus coklat cair */
+}
+
+.data-table thead {
+  background-color: #a67c52;
+  color: white;
+}
+
+
+button {
+  background-color: #9ecb7c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+  background-color: #5e7b48;
+}
+
+button.delete {
+  background-color: #bc6c25;
+}
+
+button.delete:hover {
+  background-color: #a45d1d;
+}
+
+/* Sidebar drag effect */
+.sidebar.collapsed ~ .main-content {
+  margin-left: 70px !important;
+}
+
+.data-table th,
+.data-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tindakan-btn {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.tindakan-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+/* Elak <a> dari jadi block atau kacau layout */
+.tindakan-btn a {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+/* Pastikan button tetap dalam saiz normal */
+.tindakan-btn button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-update {
+  background-color: #445735;
+  color: white;
+}
+
+.btn-update:hover {
+  background-color: #5e7b48;
+}
+
+.btn-delete {
+  background-color: #d62828;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #b91c1c;
+}
+
+
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

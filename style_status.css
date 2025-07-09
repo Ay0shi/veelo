@@ -1,0 +1,132 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfaf6;
+  margin: 0;
+  padding: 0;
+  color: #2e2e2e;
+}
+
+.main-content {
+  margin-left: 260px;
+  padding: 2rem;
+  background-color: #fdfaf6;
+  min-height: 100vh;
+}
+
+h2 {
+  color: #445735;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.bike-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.bike-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.bike-card:hover {
+  transform: translateY(-4px);
+}
+
+.bike-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.bike-details {
+  padding: 1rem 1.2rem;
+}
+
+.bike-details h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #3e4d2c;
+}
+
+.bike-details p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.bike-details input[type="number"] {
+  width: 80px;
+  padding: 6px 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.bike-details button {
+  margin-top: 12px;
+  background-color: #9ecb7c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bike-details button:hover {
+  background-color: #5e7b48;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 1rem;
+  }
+}
+.unit-habis {
+  color: #d64545;
+  font-weight: bold;
+}
+.unit-ada {
+  color: #4a7445;
+  font-weight: bold;
+}
+.unit-control {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.unit-control input[type="number"] {
+  width: 60px;
+  text-align: center;
+}
+
+.btn-increment,
+.btn-decrement {
+  padding: 6px 12px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-increment:hover,
+.btn-decrement:hover {
+  background-color: #c2c2c2;
+}
